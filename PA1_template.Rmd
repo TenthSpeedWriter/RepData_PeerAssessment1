@@ -1,7 +1,10 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
+<<<<<<< HEAD
 author: "Adam L. Seale - TenthSpeedWriter"
 date: "May 13, 2016"
+=======
+>>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270
 output: 
   html_document:
     keep_md: true
@@ -9,6 +12,7 @@ output:
 
 
 ## Loading and preprocessing the data
+<<<<<<< HEAD
 In loading our data we shall use the lubridate package to convert the date string into a valid date-handling object, then append a column titled "weekday" with the corresponding output of weekdays(ymd(date)).
 ```{r echo=T}
 library(dplyr)
@@ -50,10 +54,17 @@ hist(x=steps_per_day$total_steps,
      
      col="cyan")
 ```
+=======
+
+
+
+## What is mean total number of steps taken per day?
+>>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270
 
 
 
 ## What is the average daily activity pattern?
+<<<<<<< HEAD
 To answer this question, let us first extract the mean values across all days for each interval, ignoring missing values.
 ```{r echo=T}
 mean_at_interval <- (activity
@@ -83,10 +94,14 @@ interval_with_most_steps <- filter(mean_at_interval, mean_steps == greatest_num_
 
 interval_with_most_steps
 ```
+=======
+
+>>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270
 
 
 ## Imputing missing values
 
+<<<<<<< HEAD
 ### Number of Missing Values
 We shall first analyze the number of rows with absent values in our dataset:
 ```{r echo=T}
@@ -177,3 +192,8 @@ plot_interval_means("weekday")
 plot_interval_means("weekend")
 ```
 
+=======
+
+
+## Are there differences in activity patterns between weekdays and weekends?
+>>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270
